@@ -20,7 +20,6 @@ async function getRandomCats(){
     try{
         const response = await fetch(BASE_URL)
         const json = await response.json()
-        
         return randomCatPhoto(json)
 
     }catch(e){
